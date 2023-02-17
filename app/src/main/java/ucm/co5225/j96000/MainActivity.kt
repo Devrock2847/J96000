@@ -16,7 +16,7 @@ import java.net.URL
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
-
+    //test for github
     private lateinit var binding: ActivityMainBinding
     //val API_URL = "https://ron-swanson-quotes.herokuapp.com/v2/quotes"
     val API_URL = "https://v6.exchangerate-api.com/v6/325b56c003ec0e19ce02de94/latest/GBP"
