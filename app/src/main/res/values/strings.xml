@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">J96000</string>
+    <string name="app_name">Currency Converter</string>
+    <string name="textview">TextView</string>
     <string-array name="Currencies">
         <item>GBP</item>
         <item>USD</item>
         <item>EUR</item>
+        <item>AUD</item>
     </string-array>
 </resources>

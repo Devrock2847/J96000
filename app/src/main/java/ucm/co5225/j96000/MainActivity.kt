@@ -14,6 +14,8 @@ import java.io.IOException
 import java.net.HttpURLConnection
 import java.net.URL
 import java.util.*
+import android.widget.ArrayAdapter
+import android.widget.AutoCompleteTextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +27,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        //setContentView(R.layout.activity_main)
+
+        val currencies = resources.getStringArray(R.array.Currencies)
+        val arrayAdapter = ArrayAdapter(this, R.layout.dropdown_item, currencies)
+        val autoCompleteTV = findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView)
+        autoCompleteTV.setAdapter(arrayAdapter)
     }
 
     fun getQuote(view: View) {
